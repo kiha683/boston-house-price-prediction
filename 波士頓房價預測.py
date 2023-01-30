@@ -51,7 +51,6 @@ features = ["RM", "PTRATIO", "LSTAT"]
 target = df["MEDV"]
 
 for i, col in enumerate(features):
- # 排版1 row, 2 columns, nth plot：在jupyter notebook上兩張並排 
  plt.subplot(1, len(features) , i+1)
  # add data column into plot
  x = df[col]
